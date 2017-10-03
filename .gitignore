@@ -1,0 +1,4 @@
+*.suo
+/src/WindowsService1/.vs
+/src/WindowsService1/bin
+/src/WindowsService1/obj
