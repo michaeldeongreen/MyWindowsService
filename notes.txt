@@ -4,6 +4,7 @@
 	InstallUtil <exe name>
 
 * To Uninstall, navigate to bin\debug and run the command:
+	* Close out of services, in control panel first
 	InstallUtil /u <exe name>
 
 * To debug:
@@ -12,6 +13,7 @@
 
 If Uninstall doesn't work, try:
 	* sc delete <servicename>
+	* Make sure the service name is not in registry: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services
 	* sc queryex, find service in list and get the pid
 	* taskkill /f /pid <pid>
 	
