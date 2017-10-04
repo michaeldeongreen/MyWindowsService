@@ -1,0 +1,17 @@
+* Use Developer Command Prompt for VS2017
+
+* To Install, navigate to bin\debug and run the command:
+	InstallUtil <exe name>
+
+* To Uninstall, navigate to bin\debug and run the command:
+	InstallUtil /u <exe name>
+
+* To debug:
+	* Install Service
+	* In VS2017, Debug->Attach to Process->Find the exe name in the process list and select
+
+If Uninstall doesn't work, try:
+	* sc delete <servicename>
+	* sc queryex, find service in list and get the pid
+	* taskkill /f /pid <pid>
+	
